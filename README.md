@@ -2,7 +2,7 @@
 
 This project is developed as part of an internship assignment at AnalogDots. It is a basic shoe recommendation system based on synthetic user interaction data. The system leverages frequency and recency of interactions to recommend shoes, while also offering personalized care suggestions (e.g., cleaning or replacement) based on usage patterns.
 
-## 📌 Features
+##  Features
 
 - Recommends shoes to users based on past views and purchases.
 - Suggests cleaning or replacement reminders based on wear/clean interactions.
@@ -11,7 +11,7 @@ This project is developed as part of an internship assignment at AnalogDots. It 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 AnalogDots_Recommendation_System/
@@ -19,15 +19,17 @@ AnalogDots_Recommendation_System/
 ├── requirements.txt
 ├── schema.sql
 ├── data/
-│   └── sample_user_interactions.csv
-
+│   ├── Shoe_Catelog.csv
+│   ├── User_interaction.csv
+│   └── User_Profile.csv
 ├── recommendation_system/
-│   └── analogdots_recommender.py
+│   └── analogdots_recommender.ipynb
+
 ```
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The sample dataset includes the following columns:
 
@@ -39,7 +41,7 @@ The sample dataset includes the following columns:
 
 ---
 
-## 🛠 Setup Instructions
+##  Setup Instructions
 
 1. **Clone the Repository**
    ```bash
@@ -59,7 +61,7 @@ The sample dataset includes the following columns:
 
 ---
 
-## 🧠 Algorithm Logic
+##  Algorithm Logic
 
 ### Shoe Recommendation
 - Sort user interactions by recency (timestamp).
@@ -71,7 +73,7 @@ The sample dataset includes the following columns:
 
 ---
 
-## 🗃 Database Schema
+##  Database Schema
 
 The PostgreSQL schema includes three tables:
 - `users`
@@ -82,7 +84,7 @@ See `schema.sql` for full details.
 
 ---
 
-## ✅ Sample Output
+##  Sample Output
 
 The script outputs:
 - Recommended shoes per user
